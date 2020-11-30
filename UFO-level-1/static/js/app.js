@@ -1,12 +1,13 @@
 // from data.js
 var tableData = data;
 
+
 tableData.forEach(appendTable);
 
 // Select the submit button
 var submit = d3.select("#filter-btn");
-
- submit.on("click", function() {
+ 
+submit.on("click", function() {
 
 // Remove existing table
    d3.select("tbody").html("");
@@ -43,3 +44,4 @@ function appendTable(report) {
         }
     });
 }
+
