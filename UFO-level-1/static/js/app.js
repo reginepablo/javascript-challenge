@@ -1,8 +1,8 @@
 // from data.js
-var Data = data;
+var tData = data;
 
 // append table 
-Data.forEach(appendTable);
+tData.forEach(appendTable);
 
 // Select the filter button
 var submit = d3.select("#filter-btn");
@@ -19,7 +19,7 @@ submit.on("click", function() {
     var dateTime = d3.select("#datetime").property("value");
      console.log(dateTime);
 
-    var filteredData = Data.filter(record => record.datetime === dateTime);
+    var filteredData = tData.filter(record => record.datetime === dateTime);
      console.log(filteredData)
 
 //  Display the filtered data
